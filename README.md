@@ -1,60 +1,25 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
-    <br>
-</p>
+Informações do Projeto
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+O Projeto Loja Virtual tem como principal objetivo demonstrar uma CRUD completa para cadastro de produtos de qualquer
+natureza. Esse projeto foi desenvolvido no Yii 2 PHP Framework, uma ferramenta de desenvolvimento que ajuda o desenvolvedor
+com as principais ferramentas e tipos de formatação para a sua página Web ou sistema.
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+As principais linguagens e ferramentas encontradas e incluídas no Yii 2 são: HTML5, CSS3, PHP, JavaScript, BootStrap 4.
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+O banco de dados utilizado foi o MySQL por ser muito utilizado e pela familiaridade da linguagem.
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+Os diferenciais inclusos no projeto são:
+- Gerenciador de dependências: Composer.
+	Com o composer instalado é muito simples instalar o Yii 2 em um computador para desenvolvimento, bastando uma linha
+de comando no Prompt de Comando. Além disso, é possível fazer Migrations para adicionar ou remover tabelas do banco de dados.
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
-
-DIRECTORY STRUCTURE
--------------------
-
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-```
+ 
+Instruções para instalação do projeto
+1 - Depois de copiar o projeto na pasta do seu servidor. Criar um banco de dados MySQL com o nome "lojaVirtual"
+ ou qualquer de sua preferência.
+2 - Ir na pasta .../commom/config/main-local.php e configurar a conexão com seu banco de dados.
+3 - Abrir o prompt de comando, ir na pasta raiz do projeto lojaVirtual e inserir o comando "php init" (sem aspas).
+Escolha 0 [Develoment] e confirme "yes".
+4 - Ainda no prompt, realize a migration das tabelas do banco, digitando o comando "php yii migrate" e confirmar.
+5 - Após o banco de dados estar pronto, em seu navegador web digite: localhost/lojaVirtual/frontend/web e pronto.
+Agora só é testar (adicionar, editar, visualizar ou remover registros).
