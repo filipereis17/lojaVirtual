@@ -29,9 +29,9 @@ class Produto extends \yii\db\ActiveRecord
     {
         return [
             [['codigo', 'nome', 'descricao', 'preco'], 'required'],
-            [['preco'], 'number'],
-            [['codigo'], 'string', 'max' => 8],
-            [['nome', 'descricao'], 'string', 'max' => 255],
+            [['preco'], 'number'], 
+            [['codigo'], 'string', 'min' => 5, 'max' => 8],
+            [['nome', 'descricao'], 'string', 'min' => 10, 'max' => 255],
             [['codigo'], 'unique'],
             [['nome'], 'unique'],
         ];
@@ -46,7 +46,7 @@ class Produto extends \yii\db\ActiveRecord
             'codigo' => 'Código do Produto',
             'nome' => 'Nome do Produto',
             'descricao' => 'Descrição',
-            'preco' => 'Preço',
+            'preco' => 'Preço R$',
         ];
     }
 }
